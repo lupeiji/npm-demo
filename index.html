@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <input type="button" value="点我" id="btn">
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $("#btn").on("click",function(){
+        console.log(1111);
+        $("#box").addClass("red");
+    });
+</script>
+</html>
